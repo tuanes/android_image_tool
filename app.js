@@ -25,24 +25,6 @@ function askUserForCurrentSize() {
   });
 }
 
-
-
-// function askUserForCurrentSize() {
-//   rl.question("Enter current image size [xxxhdpi, xxhdpi, xhdpi, hdpi, mdpi, ldpi]: ",
-//   function(inputString) {
-//     currentImageSize = inputString;
-//     askUserForSmallestSize();
-//   });
-// }
-
-// function askUserForSmallestSize() {
-//   rl.question("Enter smallest desired image size [xxxhdpi, xxhdpi, xhdpi, hdpi, mdpi, ldpi]: ",
-//   function(inputString) {
-//     smallestImageSize = inputString;
-//     makeDirectories();
-//     rl.close();
-//   });
-// }
 var deleteFolderRecursive = function(path) {
   if( fs.existsSync(path) ) {
     fs.readdirSync(path).forEach(function(file,index){
@@ -113,8 +95,9 @@ function resize(fileIndex, sizeIndex) {
         } else if (fileIndex < imageFiles.length) {
           resize(fileIndex + 1, 0);
         } else {
-          console.log("Done.");
           zipFolders();
+          console.log("zipped images to file res.zip");
+          process.exit(0);
         }
       });
 }
