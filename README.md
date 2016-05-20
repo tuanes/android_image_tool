@@ -20,7 +20,9 @@ brew install imagemagick
 
 go to this project root folder
 
+```
 npm install 
+```
 
 The command will download project dependencies.
 Run this script in a directory with some images.
