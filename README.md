@@ -1,4 +1,4 @@
-AndroidImageResizer
+Android Image Tool 
 ===================
 
 A Node.js + ImageMagick script for resizing images for Android apps.
@@ -44,6 +44,10 @@ An res.zip is an output from the command below. this one contains your drawable 
 Android Image Resizer by mattlogan
 
 https://github.com/mattlogan/AndroidImageResizer
+
+## What's next
+
+A website for upload your images and download the res folder once resized 
 
 ## License
 
