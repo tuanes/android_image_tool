@@ -37,7 +37,7 @@ Enter starting image height when prompted. (Remember use expected xxxhdpi image 
 Enter image height size: 144 
 ```
 
-An res.zip is an output from the command below. this one contains your drawable folders. You can copy these to your android res folder.
+An res.zip would be an output from the command above. this one contains your drawable folders. You can copy these folders to your android res folder.
 
 ## References
 
